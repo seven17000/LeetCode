@@ -1,6 +1,6 @@
 /*
-*ÎÊÌâ£º¸ø³öÒ»¿Å¶ş²æÊ÷£¬·µ»ØÆä½áµãµÄÇ°Ğò±éÀú£¬³¢ÊÔÊ¹ÓÃ·Çµİ¹é½â¾ö¡£
-*´ğÕß£ºSeven17000
+*é—®é¢˜ï¼šç»™å‡ºä¸€é¢—äºŒå‰æ ‘ï¼Œè¿”å›å…¶ç»“ç‚¹çš„å‰åºéå†ï¼Œå°è¯•ä½¿ç”¨éé€’å½’è§£å†³ã€‚
+*ç­”è€…ï¼šSeven17000
 */
 
 #include<iostream>
@@ -10,7 +10,7 @@ using namespace std;
 
 vector<int> result;
 vector<int> preorderTraversal(TreeNode* root)
-{//µİ¹é½â¾ö
+{//é€’å½’è§£å†³
 	if (root == NULL)
 		return result;
 
@@ -24,14 +24,14 @@ vector<int> preorderTraversal(TreeNode* root)
 }
 
 vector<int> preorderTraversal(TreeNode* root)
-{//·Çµİ¹é
+{//éé€’å½’
 	vector<int> result;
 	stack<TreeNode*> s;
 
 	if (root == NULL)
 		return vector;
 
-	while (root || s.empty())
+	while (root || ï¼s.empty())
 	{
 		while (root)
 		{
