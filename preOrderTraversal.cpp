@@ -31,7 +31,7 @@ vector<int> preorderTraversal(TreeNode* root)
 	if (root == NULL)
 		return vector;
 
-	while (root || ！s.empty())
+	while (root || !s.empty())
 	{
 		while (root)
 		{
