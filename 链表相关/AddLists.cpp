@@ -40,7 +40,7 @@ using namespace std;
             cur->next = new ListNode(tmp);
             cur = cur->next;
             count = tmp/10;
-            l1->next;
+            l1 = l1->next;
         }
         
          while(l2)
@@ -49,7 +49,7 @@ using namespace std;
             cur->next = new ListNode(tmp);
             cur = cur->next;
             count = tmp/10;
-            l2->next;
+            l2 = l2->next;
         }
         
         if(count)
