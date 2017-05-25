@@ -40,7 +40,8 @@ vector<int> inorderTraversal(TreeNode* root)
 		}
 		root = s.top();
 		result.push_back(root->val);
+        s.pop();
 		root = root->right;
-	}
+    }
 	return result;
 }
