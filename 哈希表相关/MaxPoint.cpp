@@ -33,7 +33,9 @@ int MaxPoint(vector<Point> Points)
 				self++;
 				continue;
 			}
-			float k = Points[i].x == Points[j].x ? INT_MAX : (Points[j].y - Points[i].y)/(Points[j].x - Points[i].x);//横坐标相等时说明此时两点构成的直线与y轴平行，不相等则计算其k
+			float k = Points[i].x == Points[j].x ? INT_MAX : (float)(Points[j].y - Points[i].y)/(Points[j].x - Points[i].x);
+			//横坐标相等时说明此时两点构成的直线与y轴平行，不相等则计算其k
+			//这里计算的key值要转成float型，不然会导致计算结果不准确
 			mp[k]++;//k斜率计数加一
 		}
 		for (auto i = mp.begin(); i != mp.end(); i++)
